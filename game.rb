@@ -4,12 +4,11 @@ require 'ruby2d'
 
 #title of window
 set title: "Neko bot"
-#set choleta as an image
-Image.new(path: "neko.jpg")
+
 # user input
 input = gets.chomp
 #sound of neko
-nay = Music.new(".mp3")
+nay = Music.new("backround.mp3")
 lewds = Music.new("lewd.mp3")
 # if user typed hi
 if input == "hi"
@@ -18,6 +17,8 @@ else
   puts "Nya!.. please repeate what you said Master!"
 # if user types help
 if input == "help"
+  #set choleta as an image
+  Image.new(path: "neko.jpg")
   puts "commands are hi , lewd , love , nya"
 else
   puts "Nya!.. please repeate what you said Master!"
