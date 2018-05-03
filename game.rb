@@ -32,7 +32,7 @@ if input == "lewd"
 else
   puts "Nya!.. please repeate what you said Master!"
 # user input love
-if input == love
+if input == "love"
   Image.new(path: "neko.jpg")
   loves.play
 else
