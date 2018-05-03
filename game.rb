@@ -1,10 +1,10 @@
-srequire 'rubygems'
+require 'rubygems'
 require "readline"
 require 'ruby2d'
 
 #title of window
 set title: "Neko bot"
-
+Image.new(path: "neko.jpg")
 # user input
 input = gets.chomp
 #sound of neko
@@ -14,6 +14,7 @@ loves = Music.new("love.mp3")
 
 # if user typed hi
 if input == "hi"
+  Image.new(path: "neko.jpg")
 nya.play
 else
   puts "Nya!.. please repeate what you said Master!"
@@ -26,16 +27,19 @@ else
   puts "Nya!.. please repeate what you said Master!"
 # for naudy user
 if input == "lewd"
+  Image.new(path: "neko.jpg")
   lewds.play
 else
   puts "Nya!.. please repeate what you said Master!"
 # user input love
 if input == love
+  Image.new(path: "neko.jpg")
   loves.play
 else
   puts "Nya!.. please repeate what you said Master!"
   #user input Nya
   if input == "nya"
+    Image.new(path: "neko.jpg")
     nya.play
   else
       puts "Nya!.. please repeate what you said Master!"
